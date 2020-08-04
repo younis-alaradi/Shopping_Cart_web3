@@ -1,0 +1,453 @@
+html , body
+{
+    background-color:#fff;
+    font-family: "Source Code Pro";
+    overflow-x:hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+*
+{
+    text-decoration: none !important;
+}
+/**********************************|NAVIGATION SECTIONS|************************/
+.nav
+{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color:#fff;
+    box-shadow:0 19px 38px rgba(0,0,0,0.10) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.nav .links a
+{
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#000
+}
+.nav .links .mainlinks
+{
+    color:#e0501b
+}
+.nav .links:hover
+{
+    color:#e0501b;
+}
+.nav h4
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+#shopCart
+{
+    width: 35px;
+}
+/******************************************************|end-NAVIGATION SECTION|******************************/
+
+/**********************************************|Landing section |*******************************************/
+.landing
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 100vh;
+}
+.landingText h1
+{
+    font-size: 6vw ;
+    margin: 0 !important
+}
+.landingText h3
+{
+    margin: 6px !important;
+    font-size: 20px;
+    opacity:0.3;
+    line-height: 30px;
+}
+.landingText .btn
+{
+    width: 120px;
+    margin-top: 30px;
+    font-size:1.2vw;
+    padding:14px 20px 14px 20px;
+    background-color:#2f8be0;
+    border-radius: 45px;
+}
+.btn:hover
+{
+    background-color: #e0501b;
+}
+.landingText .btn a
+{
+    font-size: 1.9vw;
+    color:white;
+    text-align: center;
+}
+.landingText
+{
+
+    position: relative;
+}
+.landingText:hover
+{
+
+    position: relative;
+    cursor: grab;
+}
+
+.landingImage img
+{
+    width: 28vw;
+    animation: myfirst 2s linear 8s infinite alternate;
+}
+.landingImage img:hover
+{
+    width: 28vw;
+    cursor: pointer;
+
+    animation: myfirst 0s linear 0s infinite alternate;
+}
+@keyframes myfirst {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+/***************************************************|end - landing section |*********************************/
+
+
+/**********************************************|About design |**************************************/
+
+.about
+{
+    height: 600px;
+    padding: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutText
+{
+    position: relative;
+    padding: 0 50px ;
+    height: inherit;
+}
+.aboutText h1
+{
+    position: relative;
+    left: 110px;
+}
+.aboutText img
+{
+    width: 30vw;
+    position: relative;
+    top: 50px;
+}
+.aboutlist
+{
+    width: 50%;
+}
+ol
+{
+    list-style:none ;
+    color:black;
+    opacity:0.6;
+}
+ol li
+{
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+li p
+{
+    font-size:16px;
+    color:#000;
+    padding-left:60px ;
+    line-height: 30px;
+    opacity: 0.6;
+}
+li span
+{
+    position: relative;
+    line-height: 25px;
+    font-weight: 600;
+}
+/*******************************|Information section |**********************************/
+.infosection
+{
+    height: 600px;
+}
+.infoHeader
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.infoCard
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 40px 0 ;
+}
+.infoCard .Card
+{
+    position: relative;
+    height: 360px;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.09),0 10px 10px rgba(0,0,0,0.09);
+}
+.infoCard .one .cardoneimage
+{
+    width: 180px;
+    position: absolute;
+    top: -2px;
+    right: -50px;
+}
+.infoCard .two .cardtwoimage
+{
+    width: 180px;
+    position: absolute;
+    top: -2px;
+    right: -50px;
+}
+.infoCard .three .cardthreeimage
+{
+    width: 180px;
+    position: absolute;
+    justify-content: space-between;
+    top: -2px;
+    right: -50px;
+}
+.cardbgone {
+    height: 150px;
+    background-color: #ffce63;
+}
+
+
+
+.cardcontent
+{
+    padding: 150px 30px;
+}
+.cardcontent h2
+{
+    font-weight: 600;
+}
+.cardcontent p {
+    line-height: 30px;
+    opacity: 0.6;
+}
+.cardcontent .cardBtn
+{
+    position: absolute;
+    right: 20px;
+    padding: 10px;
+    background-color: #ededed;
+    width: 25px;
+    height: 20px;
+    border-radius: 6px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+.cardcontent .cardBtn:hover
+{
+    background-color: #2f8be0;
+
+}
+.cardcontent .cardBtn .cardIcon
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+}
+/*******************************************|end - about |*************************************/
+/***************************************|shopping section|**************************************/
+
+
+#shopCart
+{
+    cursor: pointer;
+}
+section
+{
+    width: 90%;
+    height: 400px;
+    display:flex;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+.section div
+{
+    width: 22%;
+    height: 93%;
+    padding: 1%;
+    position: relative;
+    box-shadow: #ebebeb;
+}
+section img
+{
+    width: 220px;
+    height: 186px;
+}
+
+
+section p
+{
+    margin: 5px;
+}
+h6
+{
+    width: 50px;
+    padding: 5px;
+    margin:10px;
+    font-size: 15px;
+}
+
+
+section button
+{
+    padding: 5px;
+    background: #e0501b;
+    border:none;
+    outline:none;
+    font-weight: bold;
+    color:white;
+}
+section button:hover
+{
+    cursor: pointer;
+    background-color: #2f8be0;
+}
+/***********************************|  payment     |*****************************/
+.select
+{
+    width: 60%;
+    height: 580px;
+    opacity:0.8;
+    background: white;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+}
+.select div
+{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border:9px solid #e0501b;
+    position: relative;
+    margin:5px auto ;
+}
+.select div img
+{
+    width:300px;
+    height: 100%;
+}
+.select div p
+{
+    padding: 35px;
+    color:white;
+}
+.select div p, .select div button
+{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color:white;
+}
+.select div button
+{
+    left: 60%;
+    top: 55%;
+}
+.select div span
+{
+    display:none;
+}
+.select p
+{
+    text-align: center;
+    font-size: 50px;
+}
+.Payment
+{
+    width: 200px;
+    left: 566px;
+}
+
+#clearPayment:hover
+{
+    color:#e0501b;
+    cursor: pointer;
+}
+.copyright
+{
+
+    text-align: center;
+}
+#total
+{
+    text-align: right;
+    color:#e0501b;
+    font-size: 45px;
+}
+.contact
+{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #2f8be0;
+    background-color: #ebebeb;
+}
+.contact h1
+{
+    color:#2f8be0;
+}
+.contact span
+{
+    color:black;
+}
+
+.contact #myphone
+{
+    text-align: center;
+}
+.contact #email
+{
+    text-align:left;
+}
+.contact #location
+{
+    text-align: right;
+}
+
+.green
+{
+    cursor: pointer;
+
+    background-color: #316ccc;
+}
